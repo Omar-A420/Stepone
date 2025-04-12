@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url("header.css");
+/*@import url("nutrition.css");
+@import url("splits.css");
+@import url("events.css");*/
+@import url("footer.css");
+/*@import url("about.css");*/
+@import url("main.css");
+@import url("signup.css");
+
+:root {
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+    --Overpass: "Overpass", sans-serif;
+
+    --primary-color: #84e9f9;
+    --secondary-color: #fc7efa;
+
+    --black: #000;
+    --white: #fff;
+    --color-back: #adacac;
+}
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--color-back);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gymnoobies__title {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--plus-jakarta-sans); /* Use the same font for consistency */
+    color: #000; /* Change color to black */
+    margin-top: 16px;
+}
+
+.gymnoobies__description {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--plus-jakarta-sans);
+  
+    line-height: 36px;
+    letter-spacing: -0.01em;
+  
+    color: #000; /* Change color to black */
+    opacity: 0.8;
+  
+    margin: 32px 0px;
+}
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.gymnoobies__hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.gymnoobies__hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px; /* Add padding inside the box */
+    background-color: #fff; /* White background for contrast */
+    border: 1px solid #ddd; /* Light border for the box */
+    border-radius: 8px; /* Rounded corners */
+    margin: 40px 0; /* Add spacing above and below the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-us h2 {
+    font-size: 28px; /* Adjust font size for the heading */
+    font-weight: bold; /* Bold text for emphasis */
+    font-family: var(--plus-jakarta-sans); /* Use a clean font */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-align: center; /* Center-align the heading */
+    color: #000; /* Black text color */
+    position: relative; /* For the line above */
+}
+
+.about-us h2::before {
+    content: ""; /* Add a decorative line above the heading */
+    display: block;
+    width: 80px; /* Line width */
+    height: 3px; /* Line height */
+    background-color: var(--primary-color); /* Line color */
+    margin: 0 auto 10px auto; /* Center the line and add spacing */
+}
+
+.about-us p {
+    font-size: 16px; /* Comfortable font size for paragraphs */
+    line-height: 1.8; /* Increase line height for better readability */
+    margin-bottom: 16px; /* Add spacing between paragraphs */
+    text-align: justify; /* Justify text for a clean look */
+    color: #000; /* Black text color */
+    font-family: var(--plus-jakarta-sans); /* Use a clean font */
+}

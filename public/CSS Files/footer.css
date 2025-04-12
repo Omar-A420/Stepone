@@ -1,0 +1,61 @@
+/* Footer Section */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 20px 15px; /* Reduce padding for a smaller footer */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Spread content across the footer */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 100%; /* Ensure it spans the full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+    font-family: var(--plus-jakarta-sans); /* Match the font with the rest of the website */
+}
+
+.footer-content, .footer-social {
+    flex: 1; /* Allow sections to take equal space */
+    margin: 5px; /* Reduce spacing between sections */
+    min-width: 150px; /* Ensure sections don’t shrink too much */
+}
+
+.footer-content h3, .footer-social h3 {
+    font-size: 18px; /* Reduce font size for headings */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-bottom: 8px; /* Reduce spacing below headings */
+}
+
+.footer-content p, .footer-social ul {
+    font-size: 14px; /* Reduce font size for text */
+    line-height: 1.4; /* Reduce line height for compactness */
+    margin: 3px 0; /* Reduce spacing between lines */
+}
+
+.footer-content a, .footer-social a {
+    color: var(--primary-color); /* Use primary color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-content a:hover, .footer-social a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.social-links {
+    list-style: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align links to the left */
+    gap: 10px; /* Reduce spacing between links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.social-links li {
+    display: inline; /* Display links inline */
+}
+
+.footer-copyright {
+    font-size: 12px; /* Smaller font size for copyright text */
+    margin-top: 10px; /* Reduce spacing above copyright text */
+    text-align: center; /* Center-align copyright text */
+    flex-basis: 100%; /* Ensure it spans the full width */
+    opacity: 0.8; /* Slightly faded text for subtlety */
+}

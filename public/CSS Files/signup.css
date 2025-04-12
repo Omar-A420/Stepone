@@ -1,0 +1,146 @@
+.signup-wrapper .logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.signup-wrapper .logo a {
+    text-decoration: none !important; /* Force removal of underline */
+}
+
+
+.signup-page{
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body covers the full height */
+    background-image: url('../Assets/signup.jpg'); /* Add your image path here */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    overflow: hidden;
+}
+
+.signup-wrapper{
+    font-family: var(--plus-jakarta-sans);
+    font-size: 12pt;
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    position: absolute;
+    left: 0;
+}
+
+.signup-wrapper h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.signup-wrapper form{
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup-wrapper form > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.signup-wrapper label{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    fill: white;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-wrapper input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 50px;
+    padding: 1em;
+    font: var(--plus-jakarta-sans);
+    border-radius: 0 10px 10px 0;
+    border: 2px solid white;
+    border-left: none;
+    background-color: #adb0b0;
+    transition: 0.4s ease;
+}
+.signup-wrapper input:hover{
+    border-color: black;
+}
+.signup-wrapper input:focus{
+    outline: none;
+    border-color: #adb0b0;
+}
+.signup-wrapper button{
+    margin-top: 20px;
+    border:none;
+    border-radius: 1000px;
+    padding: 1.5em 5em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.signup-wrapper button:hover{
+    background-color: var(--color-back);
+    color: black;
+}
+.signup-wrapper button:focus{
+    outline: none;
+    background-color: #adb0b0;
+}
+.signup-wrapper p, a{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.signup-wrapper a{
+    text-decoration: none;
+    color: black;
+    transition: 150ms ease;
+}
+.signup-wrapper a:hover{
+    text-decoration: underline;
+    color: #adb0b0;
+}
+
+form div.incorrect label{
+    background-color: red;
+}
+
+form div.incorrect input{
+    border-color: red;
+}
+
+#error-message{
+    color: red;
+}
+
+
+
