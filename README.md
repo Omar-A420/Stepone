@@ -26,6 +26,43 @@
 
 ---
 
+##  🔐  Environment Variables
+
+This project uses a '.env' file to manage environment-specific variables securely. 
+Before running the server, make sure to create a '.env' file in the root directery of the project with the following structures:
+
+```env
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/stepone
+JWT_SECRET=your_jwt_secret_key_here
+```
+
+How to generate a JWT secret key:
+
+✅ Option 1: Use Node.js (Best for Custom Secrets)
+
+In your terminal, run:
+```
+node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+```
+This will output a secure 128-character hexadecimal string you can copy into your .env file.
+
+✅ Option 2: Use an Online Generator (Quick & Easy)
+
+You can also use tools like: 
+
+• https://generate-random.org/string
+
+• https://randomkeygen.com/
+
+Look for something at least 32–64 characters long with a mix of letters, numbers, and symbols.
+
+Example:
+```
+JWT_SECRET=ksf82ndA9sL0vB19#vNaPz^1dEx79MQ3yWtV%g92kLc5Xe$
+```
+---
+
 ## 📬 Contact
 
 **Omar Ahmed Hamdy Mohamed Abdelnaby**  
